@@ -10,11 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet">
 </head>
 
-<!-- nu trebuia limitat scroll-ul si in newslettere nici atat nu ne asumam riscul asta. User-ii verifica emailul de pe tot tipul de display-uri, nu vrem sa ii limitam din punctul asta de vedere -->
-<body style="margin:0px; overflow:hidden;">
+
+<body style="margin:0px;">
     <div >
         <table style="background-image: url(bg.png); 
                       box-sizing: border-box;
+                      table-layout: fixed;
                       background-size: cover;
                       text-align:center;
                       width: 50%;
@@ -45,20 +46,24 @@
                             letter-spacing: 3px;" colspan="3">EXTRA</th>
             </tr>
             <tr>
-                <th style="font-size:250px; position:relative; left:100px;
+                <th style="font-size:250px;
+                            text-align: end; 
+                            padding-left:160px;
                             font-family: 'Roboto', sans-serif;
                             font-weight: 900;">
                     30
                 </th>
-                <!-- la mine nu se vede acest element, de aceea este foarte riscanta pozitionarea, asta putea fi implementata doar cu padding-uri, fyi. ti-am atasat un screenshot sa vezi cum se vede pe un display divers de al tau -->
-                <th style="font-size:48px; position:relative; left:-120px;
-                        font-family: 'Roboto', sans-serif;
+                
+                <th style="font-size:48px; 
+                            padding-left:40px;
+                            font-family: 'Roboto', sans-serif;
                             font-weight: 900;
-                            "><!--aliniere?-->
+                            ">
                     %
                 </th>
-                <!-- tot din cauza pozitionarii FF e mult prea indepartat de 30, iar principiul apropierii nu mai este respectat -->
-                <th style="font-size:68px; position:relative; left:-110px;
+                
+                <th style="font-size:68px; 
+                            text-align: left;
                             font-family: 'Roboto', sans-serif;
                             font-weight: 900;">
                     FF
@@ -91,14 +96,15 @@
             </tr>
             <tr>
                 <th style="padding-bottom:40px;" colspan="3">
-                    <!-- lipsesc cateva reguli aici care puteau sa contribuie la respectarea layout-ului: color, text-decoration -->
+                    
                         <a style="border:1px solid grey;
+                        color:black;
+                        text-decoration:none;
                         padding:20px 30px;
                         font-size: 26px;
-                        text-decoration:hidden;
+                        font-weight: 900;
                         font-family: 'Roboto', sans-serif;
-                            font-weight: 900;
-                        " href="##"> <!--a:visited,a:hover ->>none ?-->
+                        " href="##"> 
                         SHOP NOW</a> 
                 </th>
             </tr>
